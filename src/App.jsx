@@ -1,11 +1,19 @@
 import React from "react";
-
+import { BrowserRouter, Routes, Route } from
+'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
 
 export default function App() {
     return (
       <div>
-        <h1>Welcome to TD's Portfolio 🔥</h1>
-        <p>Let's get this Twitch integration rolling soon...</p>
+        <div>Layout</div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     );
   }
